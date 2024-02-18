@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-image: url("../img/EllaBridge5.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -18px;
+  margin-top: -5px;
+}
+
+/* main Section */
+#home{
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.main__description {
+  font-size: 50px;
+  font-weight: 800;
+  margin-top:-70px;
+  background: white;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__btn {
+  width: 200px;
+  font-size: 1rem;
+  background: #559A0F;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 4s;
+  outline: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #ccbaba;
+}
+
+@media screen and (max-width: 768px) {
+  .main__heading {
+    font-size: 60px;
+  }
+
+  .main__description {
+    font-size: 40px;
+  }
+}

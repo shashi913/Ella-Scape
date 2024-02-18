@@ -1,0 +1,366 @@
+html{
+  scroll-padding-top: 500px;
+}
+
+body{
+  background: fixed;
+  background-size: cover;
+  background-image: var(--background-image);
+  background-color: var(--background-color);
+}
+
+/* Gallery - start*/
+
+.pageName{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    background-color: var(--page-name-bg-color);
+    color: var(--page-name-color);
+    text-align: center;
+    padding-top: 1px;
+    top: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pageName h2{
+    font-size: 50px;
+    
+}
+
+
+#theme-selecter{
+  position: fixed;
+  top: 10.5%;
+  right: 0%;
+  width: 12%;
+  height: 5.5%;
+}
+
+#theme{
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--theme-bg-color);
+  color: var(--theme-color);
+  padding: 16px;
+  font-size: 13px;
+}
+
+#theme:hover{
+  color: var(--theme-hover-color);
+  background-color: var(--theme-hover-bg-color);
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-top: 156px;
+}
+
+#row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    overflow: hidden;
+  }
+  
+  
+  .column {
+
+    flex: 28%;
+    width: 31%;
+    padding: 0 4px;
+    overflow: hidden;
+  }
+
+
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+  
+  .image-box{
+    margin-top: 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image-box img {
+    
+    vertical-align: middle;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+
+  .img-info{
+    background-color: var(--img-info-bg-color);
+    position:absolute;
+    border-radius: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    object-fit: contain;
+    color: var(--img-info-color);
+  }
+  
+  .img-info p{
+    font-size: 1vw;
+    cursor: pointer;
+    
+  }
+
+  .image-box:hover .img-info{
+    opacity: 0.5;
+    height: 50%;
+    background-color: var(--img-info-hover-bg-color);
+    color: var(--img-info-hover-color);
+    transition: 0.75s;
+}
+
+.image-box:hover .img-info p{
+  margin-top: 10%;
+  font-size: 2vh;
+  background-color: var(--img-info-p-hover-bg-color);
+}
+
+
+/*  prompt_picture - start  */
+
+  #prompt-box{
+    display: none;
+    right: 0;
+    max-width: 59%;
+    height: 40%;
+    background-color: var(--prompt-box-bg-color);
+  }
+
+  #font-selecter{
+    position: fixed;
+    top: 16.7%;
+    right:45% ;
+    z-index: 150;
+  }
+
+  #font{
+    position: fixed;
+    top: 105px;
+    right: 140px;
+    cursor: pointer;
+    background-color: var(--font-bg-color);
+    border-radius: 20px;
+    color: var(--font-color);
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+  }
+
+  #font:hover{
+    color: var(--font-hover-color);
+    background-color: var(--font-hover-bg-color);
+  }
+
+
+  #font-1{
+    font-size: 15px;
+  }
+
+  #font-2{
+    font-size: 19px;
+  }
+
+  #font-3{
+    font-size: 22px;
+  }
+
+  
+  #font-selecter:hover .font-list {
+    display: block;
+  }
+
+  #cancel{
+    position: fixed;
+    top: 104px;
+    right: 200px;
+    width: 40px;
+    z-index: 300;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    background-color: white;
+    border-radius: 50%;
+    color: red;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  #cancel:hover{
+    opacity: 1;
+    background-color: azure;
+
+  }
+
+
+  .prompt-picture{
+    position: relative;
+    width: fit-content;
+    height: 100%;
+  }
+
+  #picture{
+    margin: 20px 20px;
+    max-width: 800px;
+    max-height: 755px;
+    padding: 2px;
+    
+  }
+
+  #picture-select {
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    
+    margin-top: 20px;
+  }
+
+  #picture-data{
+    background-color: var(--picture-data-bg-color);
+    font-weight: bolder;
+    max-width: 100%;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  #picture-data h2{
+    color: var(--picture-data-h2-color);
+    text-align: center;
+  }
+
+  #picture-data p{
+    color:var(--picture-data-p-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    margin-top: 0;
+  }
+:root,
+:root.light{
+  --background-image: url(../../Student_4/Sudent4_img/back.ground2jpg.jpg);
+  --page-name-bg-color:#6daa23;
+  --page-name-color: rgb(255, 255, 255);
+
+  --theme-bg-color: #79ccad;
+  --theme-color: rgb(255, 255, 255);
+  --theme-hover-color: black;
+  --theme-hover-bg-color: #1c976a;
+
+  --img-info-bg-color: rgba(22, 20, 20, 0.3);
+  --img-info-color: white;
+  --img-info-hover-bg-color: hwb(0 91% 7%);
+  --img-info-hover-color: rgb(8, 8, 8);
+  --img-info-p-hover-bg-color: rgb(58, 192, 91);
+  
+  --prompt-box-bg-color: rgb(117, 179, 84);
+  --font-bg-color: #79ccad;
+  --font-color: rgb(255, 255, 255);
+  --font-hover-color: black;
+  --font-hover-bg-color: #1c976a;
+
+  --picture-data-bg-color: rgb(117, 179, 84);
+  --picture-data-h2-color: rgb(6, 92, 35);
+  --picture-data-p-color: rgb(18, 19, 18);
+
+}
+
+:root.dark{
+  --background-image: url(../../Student_4/Sudent4_img/back.ground2jpg.jpg);
+
+  --page-name-bg-color: rgb(78, 141, 109);
+  --page-name-color: rgb(0, 0, 0);
+
+  --theme-bg-color: #24b465;
+  --theme-color: rgb(0, 0, 0);
+  --theme-hover-color: rgb(226, 211, 211);
+  --theme-hover-bg-color: rgb(24, 128, 55);
+
+  --img-info-bg-color: rgba(182, 189, 186, 0.3);
+  --img-info-color: rgb(43, 25, 22);
+  --img-info-hover-bg-color: rgb(68, 138, 62);
+  --img-info-hover-color: rgb(255, 255, 255);
+  --img-info-p-hover-bg-color: rgb(22, 75, 22);
+
+  --prompt-box-bg-color: rgb(73, 119, 93);
+  --font-bg-color: #24b465;
+  --font-color: rgb(0, 0, 0);
+  --font-hover-color: rgb(226, 211, 211);
+  --font-hover-bg-color: rgb(24, 128, 55);
+  
+  --picture-data-bg-color: rgb(73, 119, 93);
+  --picture-data-h2-color: rgb(22, 22, 22);
+  --picture-data-p-color: rgb(232, 232, 241);
+
+}
+
+:root.blue{
+  --background-image: url(../../Student_4/Sudent4_img/px632353-image-kwvval9i.jpg);
+
+  --page-name-bg-color: rgb(97, 218, 248);
+  --page-name-color: rgb(253, 251, 251);
+
+  --theme-bg-color: #398bac;
+  --theme-color: rgb(255, 255, 255);
+  --theme-hover-color: black;
+  --theme-hover-bg-color: #ffffff;
+
+  --img-info-bg-color: rgba(179, 240, 192, 0.3);
+  --img-info-color: rgb(84, 214, 171);
+  --img-info-hover-bg-color: hwb(204 29% 23%);
+  --img-info-hover-color: rgb(255, 255, 255);
+  --img-info-p-hover-bg-color: rgb(32, 109, 51);
+  
+  --prompt-box-bg-color: rgb(63, 110, 170);
+  --font-bg-color: #398bac;
+  --font-color: rgb(255, 255, 255);
+  --font-hover-color: black;
+  --font-hover-bg-color: #ffffff;
+
+  --picture-data-bg-color: rgb(125, 161, 194);
+  --picture-data-h2-color: rgb(12, 61, 29);
+  --picture-data-p-color: rgb(28, 37, 28);
+
+}
+
+#pageEditor{
+  border-radius: 5px;
+  background-color: rgb(117, 179, 75);
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+  margin: 20px;
+}
+
+#pageEditor a{
+  color: white;
+  text-decoration: none;
+}
+
+#pageEditor a:hover{
+  font-weight: bold;
+}
+
+

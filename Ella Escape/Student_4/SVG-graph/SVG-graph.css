@@ -1,0 +1,107 @@
+/* #svg{
+    width:fit-content;
+    height: fit-content;
+} */
+
+body{
+    background: fixed;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),url("../Sudent4_img/mariana-proenca-5o3ODxRQCfI-unsplash.jpg");
+}
+
+.content{
+    top: 80;
+}
+
+html, body,svg {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#map-box, #site-map-box{
+    width: 100%;
+    height: auto;
+}
+
+.item-box{
+    fill:rgb(228, 232, 241);
+    stroke:rgb(20, 10, 10);
+    stroke-width:5;
+    opacity:0.8;
+}
+
+.item-box:hover{
+    fill: rgb(179, 196, 30);
+    stroke: black;
+    stroke-width: 7;
+    transition: 0.5s;
+}
+
+text{
+    font-size:18px;
+    cursor: pointer;
+    fill:black;
+    
+}
+text:hover .item-box{
+    fill: rgb(179, 196, 30);
+    stroke: black;
+    stroke-width: 7;
+    transition: 0.5s;
+}
+
+#home-link{
+    font-size: 30px;
+}
+#image-box{
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 55vh;   
+}
+
+#image-box h1{
+    font-size: 7vw;
+    color: rgb(255, 255, 255);
+}
+
+#site-map-box{
+    background-color: rgb(246, 249, 246);
+}
+
+
+
+#home:hover{
+    fill: green;
+    stroke: black;
+    stroke-width: 10;
+    transition: 0.5s;
+}
+
+.graph-lines{
+    stroke:rgb(78, 23, 6);
+    stroke-width:5;
+}
+
+#site-map{
+    stroke-width: 8;
+    stroke: rgb(0, 0, 0);
+    fill:#61cf13;
+}
+#pageEditor{
+    border-radius: 5px;
+    background-color: rgb(117, 179, 75);
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+}
+
+#pageEditor a{
+    color: white;
+    text-decoration: none;
+}
+
+#pageEditor a:hover{
+    font-weight: bold;
+}

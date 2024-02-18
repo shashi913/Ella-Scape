@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!--Link to CSS-->
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../External.css">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+ 
+        <!--Box Icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Ella Escape- Products Page</title>
+    </head>
+
+    <body>
+        <div class="navigationbar">
+            <nav>
+              <a href="../../Student_2/Main_page/Mainpage.html">
+                <img
+                  class="logo"
+                  title="Mainpage.html"
+                  src="../img/Ella_navbar_logo.png"
+                  alt="image of Ella Escpae logo"
+                >
+              </a>
+              <ul class="options">
+                <li>
+                  <a
+                    id="option1"
+                    title="Mainpage.html"
+                    href="../../Student_2/Main_page/Mainpage.html"
+                    >HOME</a
+                  >
+                </li>
+                <li><a id="option2" title="title" href="../../Student_4/Gallery/Gallery.html">GALLERY</a></li>
+                <li>
+                  <a
+                    id="option3"
+                    title="title"
+                    href="../../Student_3/Enter_Quiz_Page/enter_quiz.html"
+                    >QUIZ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="option4"
+                    title="title"
+                    href="../../Student_1/Buy_Products/buyProducts.html"
+                    >SHOP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="option5"
+                    title="Comments.html"
+                    href="../../Student_2/Comment_page/Comments.html"
+                    >COMMENTS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="option6"
+                    title="title"
+                    href="../../Student_3/Student_details/Student_details.html"
+                    >STUDENT DETAILS</a
+                  >
+                </li>
+                <li>
+                  <a id="option7" title="title" href="../../Student_4/SVG-graph/svg-graph.html"
+                    >SITEMAP</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+            <header>
+                <!--Nav-->
+                <div class="nav container">
+                    <a href="" class="cart_logo">Buy Products</a>
+                    <!--Cart-Icon-->
+                    <i class='bx bxs-shopping-bag' id ="cart-icon"></i>
+                    <!-- Cart -->
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <!-- Content -->
+                        <div class="cart-content">
+               
+                        </div>
+                        <!-- Total -->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!-- Buy botton -->
+                        <button type="button" class="btn-buy" onclick="location.href='carts.html'">Buy Now</button>
+                        <!-- Cart close -->
+                        <i class='bx bx-x id' id="close-cart" ></i>
+                    </div>
+                </div>
+            </header>
+
+        <!--Shop-->
+        <section class="shop container" id="products-container">
+            <h2 class="section-title">Shop Products</h2>
+            <!--Content-->
+            <div class="shop-content">
+                <!--Box 1-->
+                <div class="product-box">
+                    <img src="../img/product_1.jpg" alt="Wooden elephant" class="product-img">
+                    <h2 class="product-title">WOODEN ELEPHANT</h2>
+                    <span class="price">$10</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 2-->
+                <div class="product-box">
+                    <img src="../img/product2.jpg" alt="Hand loom purse" class="product-img">
+                    <h2 class="product-title">HAND LOOM PURSE</h2>
+                    <span class="price">$15</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 3-->
+                <div class="product-box">
+                    <img src="../img/product3.jpg" alt="Ceremic mug elephant print" class="product-img">
+                    <h2 class="product-title">CEREMIC MUG ELEPHANT PRINT</h2>
+                    <span class="price">$5</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 4-->
+                <div class="product-box">
+                    <img src="../img/product4.jpeg" alt="Hand wooven bracelet" class="product-img">
+                    <h2 class="product-title">HAND WOOOVEN BRACELET</h2>
+                    <span class="price">$3</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 5-->
+                <div class="product-box">
+                    <img src="../img/product5.jpeg" alt="Printed t-shirt - Women" class="product-img">
+                    <h2 class="product-title">PRINTED T-SHIRT - WOMEN</h2>
+                    <span class="price">$5</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 6-->
+                <div class="product-box">
+                    <img src="../img/product6.jpeg" alt="Batik Shoulder Bag" class="product-img">
+                    <h2 class="product-title">BATIK SHOULDER BAG</h2>
+                    <span class="price">$10</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 7-->
+                <div class="product-box">
+                    <img src="../img/product7.jpeg" alt="Cocunut leaf basket" class="product-img">
+                    <h2 class="product-title">COCNUT LEAF BASKET</h2>
+                    <span class="price">$40</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                <!--Box 8-->
+                <div class="product-box">
+                    <img src="../img/product8.webp" alt="Ella Tour Guide" class="product-img">
+                    <h2 class="product-title">CYLON MAP NECKLACE</h2>
+                    <span class="price">$10</span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+
+        <div id="pageEditor">
+            <a href="../Page%20editor/pageeditor.html" target="_blank">STUDENT 1</a>
+        </div>
+        <!-- Link to JS -->
+        <script src="main.js"></script>    
+</body>
+</html>

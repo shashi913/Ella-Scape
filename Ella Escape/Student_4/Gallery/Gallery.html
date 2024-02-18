@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <link rel="stylesheet" href="../External.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--navber: copy and paste this div block to your html file body tag-->
+    <div class="navigationbar">
+      <nav>
+        <a href="../../Student_2/Main_page/Mainpage.html">
+          <img class="logo" title="Mainpage.html" src="../../Student_4/Sudent4_img/Ella_navbar_logo.png" alt="Logo" >
+        </a>
+        <ul class="options" >
+          <li><a id="option1" title="Mainpage.html" href="../../Student_2/Main_page/Mainpage.html">HOME</a></li>
+          <li><a id="option2" title="Gallery.html" href="../Gallery/Gallery.html">GALLERY</a></li>
+          <li><a id="option3" title="title" href="../../Student_3/Enter_Quiz_Page/enter_quiz.html">QUIZ</a></li>
+          <li><a id="option4" title="title" href="../../Student_1/Buy_Products/buyProducts.html">SHOP</a></li>
+          <li><a id="option5" title="Comments.html" href="../../Student_2/Comment_page/Comments.html">COMMENTS</a></li>
+          <li><a id="option6" title="title" href="../../Student_3/Student_details/Student_details.html">STUDENT DETAILS</a></li>
+          <li><a id="option7" title="title" href="../SVG-graph/svg-graph.html">SITEMAP</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- nav-bar end -->
+
+
+      <div class="pageName">
+        <h1>Gallery</h1>
+
+        <div id="theme-selecter">
+            <select name="theme" id="theme">
+              <option value="light">Light Green</option>
+              <option value="dark">Dark Green</option>
+              <option value="blue">Blue</option>
+              <option value="random">Random</option>
+            </select>
+
+        </div>
+
+    </div>
+    
+   
+
+    <div class="flex-box">
+    <div id="row">
+
+      <!--    line-1     -->
+        <div class="column" id="column1">
+          <div class="image-box">
+            <img src="../Sudent4_img/Rawana_cave.jpg" alt="Rawana cave" onmouseenter="rawanaCave(this);">
+            <div class="img-info" ><p>Rawana Cave</p></div>
+          </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/Demodara_railway_station.jpg" alt="Demodara Railway Station" onmouseenter="demodaraRailway(this);">
+              <div class="img-info"><p>Demodara Railway Station</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/Ravana_Falls.jpg" alt="Rawana Fall" onmouseenter="rawanaWaterfall(this);">
+              <div class="img-info"><p>Rawana Waterfall</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/Liptons_Seat.jpg" alt="Lipton Seat" onmouseenter="liptonSeat(this);">
+              <div class="img-info"><p>Lipton Seat </p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/Kandy_ella_train.jpg" alt="Kandy Ella Train" onmouseenter="kandyRailway(this);">
+              <div class="img-info"><p>Kandy to Ella RAilway</p></div>
+            </div>
+
+          </div>
+
+          <!--    line-2     -->
+          <div class="column" id="column3">
+            
+
+            <div class="image-box">
+              <img src="../Sudent4_img/DSC5132.jpg" alt="Little Adam's Peak" onmouseenter="littleAdamPeak(this);">
+              <div class="img-info"><p>Little Adam's Peak</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/flying-rawana_headeri_mage-mobile.jpg" alt="Flying Rawana" onmouseenter="flyingRawana(this);">
+              <div class="img-info"><p>Flying Rawana</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/mini_adams_peak_17.jpg" alt="Little Adam's Peak" onmouseenter="littleAdamPeak(this);">
+              <div class="img-info"><p>Little Adam's Peak</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/SL_Traveller_Ella_Rock.jpg" alt="Ella Rock" onmouseenter="ellaRock(this);">
+              <div class="img-info"><p>Ella Rock</p></div>
+            </div>
+
+            
+            
+          </div>
+
+
+          <!--    line-3     -->
+          <div class="column" id="column2">
+            <div class="image-box">
+              <img src="../Sudent4_img/Nine_arch_bridge.jpg" alt="Nine Arch Bridge" onmouseenter="nineArch(this);">
+              <div class="img-info"><p>Nine-Arch Bridge</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/Tour_Guide_On_Adisham_Bungalow_Sri_Lanka___3-best_places_to_Visit.png" alt="Adisham Bungalow" onmouseenter="adhisomBungalow(this);">
+              <div class="img-info"><p>Adisham Bungalow</p></div>
+            </div>
+
+            <div class="image-box">
+              <img src="../Sudent4_img/halpewette_tea_factory.jpg" alt="Halpewatta Tea Factory" onmouseenter="halpewattaFact(this);">
+              <div class="img-info"><p>Halpewatta Tea Factory</p></div>
+            </div>
+
+            
+
+            <div class="image-box">
+              <img class="img-gallery" src="../Sudent4_img/Mountain_Houses_(234472117).jpeg" alt="Cabanas" onmouseenter="cabanas(this);">
+              <div class="img-info"><p>Cabanas</p></div>
+            </div>
+          </div>
+          
+
+        </div>
+        
+        <div id="prompt-box">
+          
+          <div id="font-selecter">
+              <select name="font" id="font">
+                <option value="font-1" id="font-1">A</option>
+                <option value="font-2" id="font-2">A</option>
+                <option value="font-3" id="font-3">A</option>
+              </select>
+
+          </div>
+          
+          <div id="cancel" onclick="cancelFunction();"><strong>&times;</strong></div>
+          <div id="prompt-picture">
+            <div id="picture">
+              <img id="picture-select" src="#" alt="hovered picture">
+            </div>
+            <div id="picture-data"></div>
+          </div>
+        </div>
+      </div>
+      <div id="pageEditor">
+        <a href="../Page_editor_4/pageeditor.html" target="_blank"
+          >STUDENT 4</a>
+      </div>
+      
+      <script src="Gallery.js"></script>
+
+    </body>
+</html>

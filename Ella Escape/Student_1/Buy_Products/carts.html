@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cart</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="carts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <div class="container">
+            <form class ="form" id="form">
+                <div class = "row">
+                    <div class="col">
+                        <h3 class="title"> Billing address</h3>
+
+                        <div class="inputBox">
+                            <label for="fname">Full name : </label>
+                            <input type="text" id ="fname" placeholder="john deo">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="inputBox">
+                            <label for ="email">Email : </label>
+                            <input type="text" id ="email" placeholder="example@example.com">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="inputBox">
+                            <label for="address">Address : </label>
+                            <input type="text" id="address" placeholder="number - street">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="inputBox">
+                            <label for="city">City : </label>
+                            <input type="text" id="city" placeholder="colombo">
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <label for ="country">Country : </label>
+                                <input type="text" id="country" placeholder="Srilanka">
+                                <small>Error Message</small>
+                            </div>
+                            <div class="inputBox">
+                                <label for ="zipcode">Zip Code : </label>
+                                <input type="text" id="zipcode" placeholder="12345">
+                                <small>Error Message</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3 class="title">Payment</h3>
+
+                        <div class="inputBox">
+                            <img src="../img/credit-cards.png" alt="card image" class="card-img">
+                            
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="cardName">Name on Card : </label>
+                            <input type="text" id="cardName" placeholder="Ms. Alice Mayer">
+                            <small>Error Message</small>
+                        </div>
+                    
+                        <div class="inputBox">
+                            <label for="creditCardNum">Credit Card Number : </label>
+                            <input type="text" id="creditCardNum" placeholder="1111-2222-3333-4444">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="inputBox">
+                            <label for="expMonth">Exp month : </label>
+                            <input type="text" id="expMonth" placeholder="january">
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <label for="expYear">Exp year : </label>
+                                <input type="number" id="expYear" placeholder="2023">
+                                <small>Error Message</small>
+                            </div>
+                            <div class="inputBox">
+                                <label for="cv">CV : </label>
+                                <input type="text" id="cv" placeholder="123">
+                                <small>Error Message</small>
+                            </div>
+                        </div>
+                        <div class="cart-buttons">
+                            <button data-modal-target="#popup-modal" type="submit" onclick="return formValidation();"
+                                id="myBtn">Finish Order</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- cart popup-modal -->
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Hello <span class="userName" id="userName">n</span>, this is your order summary!</h1>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="summary-details">
+                        <h3>PERSONAL DETAILS</h3>
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <label for="fname">Full Name</label>
+                                <span class="fullname-span" id="fullname">FName</span>
+                            </div>
+                            <div class="modal-column">
+                                <label for="email">Email</label>
+                                <span class="email-span" id="Email">Email</span>
+                            </div>
+                        </div>
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <label for="address">Address</label>
+                                <span class="address-span" id="Address">Address</span>
+                            </div>
+                            <div class="modal-column">
+                                <label for="city">City</label>
+                                <span class="city-span" id="City">City</span>
+                            </div>
+                        </div>
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <label for="country">Country</label>
+                                <span class="country-span" id="Country">Country</span>
+                            </div>
+                            <div class="modal-column">
+                                <label for="zipcode">Zip Code</label>
+                                <span class="zip-span" id="ZipCode">ZipCode</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="cart-buttons">
+                        <button type="submit" onclick="return paymentDone();" id="doneBtn">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div id="pageEditor">
+        <a href="../Page%20editor/pageeditor.html" target="_blank">STUDENT 1</a>
+    </div>
+
+    <!-- payment-done modal -->
+    <div id="doneModal" class="done-modal">
+
+        <div class="done-content">
+            <img src="../img/PaymentDone.png" alt="done">
+            <h2>Payment Successful!</h2>
+
+        </div>
+
+    </div>
+  
+    <script src="main.js"></script>
+
+    </body>
+</html>

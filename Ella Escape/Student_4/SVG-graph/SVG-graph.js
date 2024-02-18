@@ -1,0 +1,56 @@
+//--navBar
+const activePage = window.location.pathname;
+var activeId;
+const navLinks = document.querySelectorAll(".options a"); //to get a list with all navlinks.
+for (let i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].pathname == activePage) {
+        activeId = navLinks[i].id
+        document.getElementById(activeId).style.cssText= "background-Color : #5CAA35; color: white";
+        break;
+    }
+}
+//navber
+
+//section
+function showTitle(id) {
+    let section = document.getElementById(id).querySelector(".title");
+        section.style.cssText = "opacity:1";
+}
+function hideTitle(id) {
+    let section = document.getElementById(id).querySelector(".title");
+        section.style.cssText = "opacity:0";
+}
+
+
+
+function resizing_func() {
+    if (document.body.clientWidth < 1280) {
+        document.querySelector(".navigationbar ul").style.cssText = "margin-left : 20%";
+    }
+    else {
+        document.querySelector(".navigationbar ul").style.cssText="margin-left : 50%";
+    }
+    
+    let links = document.querySelectorAll("li a");
+    if (document.body.clientWidth < 810) {
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].id != activeId) {
+                document.getElementById(links[i].style.display = "none");
+            }
+        }
+        document.querySelector(".navigationbar ul").style.cssText = "display: flex; justify-content: center";
+    }
+    else {
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].id != activeId) {
+                document.getElementById(links[i].style.display = "inline");
+            }
+        }
+    }
+}
+
+resizing_func();
+
+//resize navber
+window.addEventListener("resize", resizing_func);
+//navbar--

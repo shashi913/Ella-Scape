@@ -1,0 +1,267 @@
+body{
+    background-color: rgb(178, 192, 203);
+    padding-bottom: 5%;
+}
+
+html{
+    scroll-padding-top: 80px;
+}
+
+#sidebar{
+    top:80px;
+    left:0;
+    z-index: 200;
+    width: 20%;
+    height: fit-content;
+    position: fixed;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    transform: translateY(-100%);
+}
+
+#sidebar_icon{
+    z-index: 100;
+    top: 100px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    padding: 4px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#sidebar_icon img{
+    display: block;
+    margin: auto;
+    height: 80%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+#sidebar_icon:hover{
+    transform: scale(1.15);
+}
+
+ol{
+    margin-left: 10%;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+#sidebar p{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    font-size: 1.25vw;
+}
+
+ol li{
+    padding: 5%;
+    transition: 0.6s;
+}
+
+ol li:hover{
+    transform: scale(1.15);
+}
+
+
+#backtotop_icon{
+    z-index: 100;
+    bottom: 50px;
+    border-radius: 50%;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+
+#backtotop_icon img{
+    display: block;
+    margin: auto;
+    height: 80%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+#backtotop_icon:hover{
+    transform: scale(1.15);
+}
+
+
+#heading_div{
+    height: 80vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(15, 25, 2, 0.393)), url("../images_Student3/LS_RavanaFalls_Desktop_1920x700.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: 80vh;
+}
+
+h1{
+    text-align: center;
+    vertical-align: middle;
+    filter: brightness(200%);
+    line-height: 80vh;
+    font-size: 90px;
+}
+
+.content_div{
+    background-color: azure;
+    height: auto;
+    font-size: 1vw;
+    display: flex;
+    padding: 5% 80px;
+}
+
+#content1{
+    background-color: aliceblue;
+}
+
+#content2{
+    background-color: #dbdee0;
+}
+
+#content3{
+    background-color: rgb(196, 202, 207);
+}
+
+#content4{
+    background-color: rgb(178, 192, 203);
+}
+
+#image1{
+    margin-right: 2%;
+    width: 60%;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.pgimgs{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+figcaption{
+    text-align: center;
+}
+
+.img_link:link, .img_link:visited, .img_link:active{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.img_link:hover{
+    color: aliceblue;
+}
+
+#content1Div{
+    background-color:aliceblue;
+    margin-left: 2%;
+    text-align: justify;
+    height: auto;
+    padding: 0 4%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#image2{
+    margin-left: 2%;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+#content2Div{
+    background-color: #dbdee0;
+    margin-right: 1%;
+    text-align: justify;
+    height: auto;
+    padding-top: 0%;
+    padding: 0 4%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#image3{
+    margin-right: 2%;
+    height: 80vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#image4{
+    margin-left: 2%;
+    height: 80vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#content3Div{
+    background-color: rgb(196, 202, 207);
+    margin-right: 1%;
+    text-align: justify;
+    height: auto;
+    padding: 0 4%;
+    width: 50%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+#image5{
+    margin-right: 2%;
+    height: 80vh;
+    border-radius: 5px;
+
+}
+
+figure{
+    display: inline-block;
+}
+
+#image5 img{
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+#content4Div{
+    background-color:  rgb(178, 192, 203);
+    min-width: 50%;
+    width: 50%;
+    max-width: fit-content;
+    margin-right: 1%;
+    text-align: justify;
+    height: 80vh;
+    padding: 0 4%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+#pgEditor{
+    border-radius: 5px;
+    background-color: rgb(117, 179, 75);
+    padding: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin: 7% 0 20px 20px;
+}
+
+#pgEditor a:link, #pgEditor a:visited, #pgEditor a:active {
+    color: azure;
+    text-decoration: none;
+}
+
+#pgEditor a:hover{
+    font-weight: bold;
+}

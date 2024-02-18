@@ -1,0 +1,290 @@
+body{
+    background-color: rgb(178, 192, 203);
+    padding-bottom: 5%;
+    /* background-image: url(images/SL_Traveller_Ella_Rock.jpg); */
+}
+
+html{
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+#sidebar{
+    top:80px;
+    left:0;
+    z-index: 200;
+    width: 20%;
+    height: fit-content;
+    position: fixed;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    transform: translateY(-100%);
+}
+
+#sidebar_icon{
+    z-index: 100;
+    top: 100px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    padding: 4px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#sidebar_icon img{
+    display: block;
+    margin: auto;
+    height: 80%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+#sidebar_icon:hover{
+    transform: scale(1.15);
+}
+
+ol{
+    margin-left: 10%;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+#sidebar p{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    font-size: 1.25vw;
+}
+
+ol li{
+    padding: 5%;
+    transition: 0.6s;
+}
+
+ol li:hover{
+    transform: scale(1.15);
+}
+
+
+#backToTop_btn{
+    display: none;
+    position: fixed;
+    z-index: 500;
+    bottom: 50px;
+    border-radius: 50%;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(198, 210, 188);
+    transition: 0.6s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#backToTop_btn img{
+    display: block;
+    margin: auto;
+    height: 80%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+#backtotop_icon:hover{
+    transform: scale(1.15);
+}
+
+
+#header{
+    background-image: linear-gradient(rgba(19, 18, 18, 0.54),rgba(23, 21, 21, 0.507)),url("../Sudent4_img/SL_Traveller_Ella_Rock.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 4.5%;
+    width: 100%;
+    height: 80vh;
+}
+h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: white;
+    font-size: 700%;
+}
+
+#content{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+#first-box{
+    padding:40px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white; 
+}
+
+.first-box-flex{
+    width: 45%;    
+}
+
+#description-1 h2{
+    text-align: center;
+    color: green;
+    font-size: 190%;
+}
+
+
+#image-1 img{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 10px;
+    height: auto;       
+}
+
+#second-box{
+    padding:30px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #dbdee0;   
+}
+
+.second-box-flex{
+    width: 48%; 
+}
+
+
+#image-2 img{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+
+
+#description-2 h2{
+    text-align: center;
+    color: green;
+    font-size: 190%
+}
+
+#third-box{ 
+    background-color: rgb(196, 202, 207);
+    padding:30px 10% 60px 10%;
+}
+
+#third-box-h2{
+    text-align: center;
+    color: green;
+    font-size: 150%;
+    margin-bottom: 50px;
+    
+}
+
+#third-box-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes{
+    color: white;
+    background-color: rgb(94, 138, 86);
+    width: 25%;
+    padding: 25px 30px;
+    font-size: 1vw;
+}
+
+
+#forth-box{
+    padding:50px 10%;
+    background-color: #dbdee0;  
+}
+
+#forth-box-h2{
+    color: green;
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 40px;
+}
+
+#forth-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forth-box-flex{
+    width: 48%;
+}
+
+#image-box-3 img{ 
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+}
+
+#description-4 li{
+    margin: 10px 0;
+}
+
+#description-4 h2{
+text-align: center;
+}
+
+
+
+#description-4 p{
+    text-align: left;
+}
+
+#fifth-box{
+    padding:20px 10% 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #dbdee0;
+}
+
+.fifth-box-flex{
+    width: 47%;
+}
+
+
+#image-box-4 img{ 
+    width: 100%;
+    height: auto;
+}
+
+#description-5 h2{
+color: black;
+text-align: center;
+margin-top: 0;
+margin-bottom: 25px;
+}
+#description-5 li{
+    margin: 10px 0;
+}
+
+
+#pgEditor{
+    border-radius: 5px;
+    background-color: rgb(117, 179, 75);
+    padding: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+}
+
+#pgEditor a:link, #pgEditor a:visited, #pageEditor a:active {
+    color: azure;
+    text-decoration: none;
+}
+
+#pgEditor a:hover{
+    font-weight: bold;
+}

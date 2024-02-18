@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz_styles.css">
+    <link rel="stylesheet" href="../External.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&family=Gajraj+One&family=Gothic+A1:wght@800&family=Montserrat:wght@400;600&family=Phudu:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="quiz.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="navigationbar">
+        <nav>
+          <a href="../../Student_2/Main_page/Mainpage.html">
+            <img
+              class="logo"
+              title="Mainpage.html"
+              src="../images_Student3/Ella_navbar_logo.png"
+              alt="image of Ella Escpae logo"
+            >
+          </a>
+          <ul class="options">
+            <li>
+              <a
+                id="option1"
+                title="Mainpage.html"
+                href="../../Student_2/Main_page/Mainpage.html"
+                >HOME</a
+              >
+            </li>
+            <li><a id="option2" title="title" href="../../Student_4/Gallery/Gallery.html">GALLERY</a></li>
+            <li>
+              <a
+                id="option3"
+                title="title"
+                href="../../Student_3/Enter_Quiz_Page/enter_quiz.html"
+                >QUIZ</a
+              >
+            </li>
+            <li>
+              <a
+                id="option4"
+                title="title"
+                href="../../Student_1/Buy_Products/buyProducts.html"
+                >SHOP</a
+              >
+            </li>
+            <li>
+              <a
+                id="option5"
+                title="Comments.html"
+                href="../../Student_2/Comment_page/Comments.html"
+                >COMMENTS</a
+              >
+            </li>
+            <li>
+              <a
+                id="option6"
+                title="title"
+                href="../../Student_3/Student_details/Student_details.html"
+                >STUDENT DETAILS</a
+              >
+            </li>
+            <li>
+              <a id="option7" title="title" href="../../Student_4/SVG-graph/svg-graph.html"
+                >SITEMAP</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    <div id="time-container">
+        <p id="time">Timer : 60s</p>
+    </div>
+    <div id="remaining-qs">
+        <p id="remains">10 Questions remaining</p>
+    </div>
+    <div id="after-quiz">
+        <p id="close">&cross;</p>
+        <p id="heading" class="holder">Quiz Summary </p>
+        <p class="holder" id="score_h">Score: </p>
+        <p id="score-holder"></p>
+        <p class="holder">Questions answered: </p>
+        <p id="answered"></p>
+        <p class="holder">Time Taken: </p>
+        <p id="time-taken"></p>
+        <div id="try-again" onclick="location.href='quiz.html'">Try Again!</div> 
+    </div>
+    <div id="questions">
+        <div id="question1" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title1">Question 1 :</b><br>What is the best way to reach Ella, Sri Lanka?</p>
+            <div class="answer_div" id="1Adiv">
+                <input class="answers" type="radio" name="answer1" id="1A">
+                <label id="1AL" for="1A"><span id="1Afeedback"></span>By car</label>
+            </div>
+            <div class="answer_div" id="1Bdiv">
+                <input class="answers" type="radio" name="answer1" id="1B">
+                <label id="1BL" for="1B"><span id="1Bfeedback"></span>By train</label>
+            </div>
+            <div class="answer_div"  id="1Cdiv">
+                <input class="answers" type="radio" name="answer1" id="1C">
+                <label id="1CL" for="1C"><span id="1Cfeedback"></span>By bus</label>
+            </div>
+            <div class="answer_div" id="1Ddiv">
+                <input class="answers" type="radio" name="answer1" id="1D">
+                <label id="1DL" for="1D"><span id="1Dfeedback"></span>By plane</label>
+            </div>
+        </div>
+
+        <div id="question2" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title2">Question 2 :</b><br>What is the most popular outdoor activity in Ella, Sri Lanka?</p>
+            <div class="answer_div" id="2Adiv">
+                <input class="answers" type="radio" name="answer2" id="2A">
+                <label id="2AL" for="2A"><span id="2Afeedback"></span>Surfing</label>
+            </div>
+            <div class="answer_div" id="2Bdiv">
+                <input class="answers" type="radio" name="answer2" id="2B">
+                <label id="2BL" for="2B"><span id="2Bfeedback"></span>Trekking</label>
+            </div>
+            <div class="answer_div" id="2Cdiv">
+                <input class="answers" type="radio" name="answer2" id="2C">
+                <label id="2CL" for="2C"><span id="2Cfeedback"></span>Skiing</label>
+            </div>
+            <div class="answer_div" id="2Ddiv">
+                <input class="answers" type="radio" name="answer2" id="2D">
+                <label id="2DL" for="2D"><span id="2Dfeedback"></span>Scuba Diving</label>
+            </div>
+        </div>
+
+
+        <div id="question3" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title3">Question 3 :</b><br>Which landmark in Ella is known for its panoramic views of the surrounding hills?</p>
+            <div class="answer_div" id="3Adiv">
+                <input class="answers" type="radio" name="answer3" id="3A">
+                <label id="3AL" for="3A"><span id="3Afeedback"></span>Ravana Falls</label>
+            </div>
+            <div class="answer_div" id="3Bdiv">
+                <input class="answers" type="radio" name="answer3" id="3B">
+                <label id="3BL" for="3B"><span id="3Bfeedback"></span>Nine Arches Bridge</label>
+            </div>
+            <div class="answer_div" id="3Cdiv">
+                <input class="answers" type="radio" name="answer3" id="3C">
+                <label id="3CL" for="3C"><span id="3Cfeedback"></span>Little Adam's Peak</label>
+            </div>
+            <div class="answer_div" id="3Ddiv">
+                <input class="answers" type="radio" name="answer3" id="3D">
+                <label id="3DL" for="3D"><span id="3Dfeedback"></span>Ella Rock</label>
+            </div>
+        </div>
+
+        <div id="question4" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title4">Question 4 :</b><br>What is the climate like in Ella, Sri Lanka?</p>
+            <div class="answer_div" id="4Adiv">
+                <input class="answers" type="radio" name="answer4" id="4A">
+                <label id="4AL" for="4A"><span id="4Afeedback"></span>Hot and humid year-round</label>
+            </div>
+            <div class="answer_div" id="4Bdiv">
+                <input class="answers" type="radio" name="answer4" id="4B">
+                <label id="4BL" for="4B"><span id="4Bfeedback"></span>Mild and pleasant</label>
+            </div>
+            <div class="answer_div" id="4Cdiv">
+                <input class="answers" type="radio" name="answer4" id="4C">
+                <label id="4CL" for="4C"><span id="4Cfeedback"></span>Cold and dry</label>
+            </div>
+            <div class="answer_div" id="4Ddiv">
+                <input class="answers" type="radio" name="answer4" id="4D">
+                <label id="4DL" for="4D"><span id="4Dfeedback"></span>Tropical with frequent monsoon</label>
+            </div>
+        </div>
+
+        <div id="question5" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title5">Question 5 :</b><br>What is the best time of year to visit Ella, Sri Lanka?</p>
+            <div class="answer_div" id="5Adiv">
+                <input class="answers" type="radio" name="answer5" id="5A">
+                <label id="5AL" for="5A"><span id="5Afeedback"></span>May to September</label>
+            </div>
+            <div class="answer_div" id="5Bdiv">
+                <input class="answers" type="radio" name="answer5" id="5B">
+                <label id="5BL" for="5B"><span id="5Bfeedback"></span>October to February</label>
+            </div>
+            <div class="answer_div" id="5Cdiv">
+                <input class="answers" type="radio" name="answer5" id="5C">
+                <label id="5CL" for="5C"><span id="5Cfeedback"></span>March to April</label>
+            </div>
+            <div class="answer_div" id="5Ddiv">
+                <input class="answers" type="radio" name="answer5" id="5D">
+                <label id="5DL" for="5D"><span id="5Dfeedback"></span>Anytime is good</label>
+            </div>
+        </div>
+
+        <div id="question6" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title6">Question 6 :</b><br>Which waterfall in Ella is known for its scenic beauty and popular swimming spot?</p>
+            <div class="answer_div" id="6Adiv">
+                <input class="answers" type="radio" name="answer6" id="6A">
+                <label id="6AL" for="6A"><span id="6Afeedback"></span>Ravana Falls</label>
+            </div>
+            <div class="answer_div" id="6Bdiv">
+                <input class="answers" type="radio" name="answer6" id="6B">
+                <label id="6BL" for="6B"><span id="6Bfeedback"></span>Bambaragama Falls</label>
+            </div>
+            <div class="answer_div" id="6Cdiv">
+                <input class="answers" type="radio" name="answer6" id="6C">
+                <label id="6CL" for="6C"><span id="6Cfeedback"></span>Diyaluma Falls</label>
+            </div>
+            <div class="answer_div" id="6Ddiv">
+                <input class="answers" type="radio" name="answer6" id="6D">
+                <label id="6DL" for="6D"><span id="6Dfeedback"></span>Dunhinda Falls</label>
+            </div>
+        </div>
+
+        <div id="question7" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title7">Question 7 :</b><br>Which tea estate in Ella is known for its scenic views and tea tasting tours?</p>
+            <div class="answer_div" id="7Adiv">
+                <input class="answers" type="radio" name="answer7" id="7A">
+                <label id="7AL" for="7A"><span id="7Afeedback"></span>Bluefield Tea Gardens</label>
+            </div>
+            <div class="answer_div" id="7Bdiv">
+                <input class="answers" type="radio" name="answer7" id="7B">
+                <label id="7BL" for="7B"><span id="7Bfeedback"></span>Uva Halpewatte Tea Factory</label>
+            </div>
+            <div class="answer_div" id="7Cdiv">
+                <input class="answers" type="radio" name="answer7" id="7C">
+                <label id="7CL" for="7C"><span id="7Cfeedback"></span>Mackwoods Tea Estate</label>
+            </div>
+            <div class="answer_div" id="7Ddiv">
+                <input class="answers" type="radio" name="answer7" id="7D">
+                <label id="7DL" for="7D"><span id="7Dfeedback"></span>Handunugoda Tea Estate</label>
+            </div>
+        </div>
+
+        <div id="question8" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title8">Question 8 :</b><br>What is the significance of the Nine Arches Bridge in Ella, Sri Lanka?</p>
+            <div class="answer_div" id="8Adiv">
+                <input class="answers" type="radio" name="answer8" id="8A">
+                <label id="8AL" for="8A"><span id="8Afeedback"></span>It is a historical railway bridge built during the British colonial era.</label>
+            </div>
+            <div class="answer_div" id="8Bdiv">
+                <input class="answers" type="radio" name="answer8" id="8B">
+                <label id="8BL" for="8B"><span id="8Bfeedback"></span>It is a sacred bridge built by King Ravana in the Ramayana epic.</label>
+            </div>
+            <div class="answer_div" id="8Cdiv">
+                <input class="answers" type="radio" name="answer8" id="8C">
+                <label id="8CL" for="8C"><span id="8Cfeedback"></span>It is a modern suspension bridge built for tourism purposes.</label>
+            </div>
+            <div class="answer_div" id="8Ddiv">
+                <input class="answers" type="radio" name="answer8" id="8D">
+                <label id="8DL" for="8D"><span id="8Dfeedback"></span>It is a natural bridge formed by rock formations over a river</label>
+            </div>
+        </div>
+
+        <div id="question9" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title9">Question 9 :</b><br>What is the average elevation of Ella?</p>
+            <div class="answer_div" id="9Adiv">
+                <input class="answers" type="radio" name="answer9" id="9A">
+                <label id="9AL" for="9A"><span id="9Afeedback"></span>100 meters above sea leve</label>
+            </div>
+            <div class="answer_div" id="9Bdiv">
+                <input class="answers" type="radio" name="answer9" id="9B">
+                <label id="9BL" for="9B"><span id="9Bfeedback"></span>500 meters above sea level</label>
+            </div>
+            <div class="answer_div" id="9Cdiv">
+                <input class="answers" type="radio" name="answer9" id="9C">
+                <label id="9CL" for="9C"><span id="9Cfeedback"></span>1,000 meters above sea level</label>
+            </div>
+            <div class="answer_div" id="9Ddiv">
+                <input class="answers" type="radio" name="answer9" id="9D">
+                <label id="9DL" for="9D"><span id="9Dfeedback"></span>2,000 meters above sea level</label>
+            </div>
+        </div>
+
+        <div id="question10" class="question">
+            <p class="not_answered">Not Answered</p>
+            <p class="questiondiv"><b id="title10">Question 10 :</b><br>Ella is located in which region of Sri Lanka?</p>
+            <div class="answer_div" id="0Adiv">
+                <input class="answers" type="radio" name="answer10" id="0A">
+                <label id="0AL" for="0A"><span id="0Afeedback"></span>Western Province</label>
+            </div>
+            <div class="answer_div" id="0Bdiv">
+                <input class="answers" type="radio" name="answer10" id="0B">
+                <label id="0BL" for="0B"><span id="0Bfeedback"></span>Southern Province</label>
+            </div>
+            <div class="answer_div"  id="0Cdiv">
+                <input class="answers" type="radio" name="answer10" id="0C">
+                <label id="0CL" for="0C"><span id="0Cfeedback"></span>Central Province</label>
+            </div>
+            <div class="answer_div"  id="0Ddiv">
+                <input class="answers" type="radio" name="answer10" id="0D">
+                <label id="0DL" for="0D"><span id="0Dfeedback"></span>Northern Province</label>
+            </div>
+        </div>
+    </div>
+    <div id="summary-div">
+        <div id="q-summary"><p class="Button_text">Quiz Summary</p></div>
+    </div>
+    <div id="submit-div">
+        <div id="submit"><p class="Button_text">Submit</p></div>
+    </div>
+    <div id="pgEditor">
+        <a href="../Page_Editor/PageEditor.html" target="_blank">STUDENT 3</a>
+    </div>
+</body>
+</html>
